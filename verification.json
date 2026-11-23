@@ -1,0 +1,20 @@
+{
+  "raw_rows": 610,
+  "duplicates_removed": 4,
+  "rejected_rows": 6,
+  "clean_rows": 600,
+  "machine_report_rows": 20,
+  "train_rows": 400,
+  "test_rows": 200,
+  "scored_rows": 10,
+  "reference_metrics_local": {
+    "baseline_mae": 144.85238,
+    "model_mae": 34.79441146918123,
+    "model_r2": 0.942746944156268
+  },
+  "local_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0"
+  }
+}
