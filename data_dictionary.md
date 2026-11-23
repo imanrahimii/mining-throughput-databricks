@@ -1,0 +1,6 @@
+# Data dictionary
+All records are fictional and generated with seed 42. No operational decisions should use these data or models.
+
+Each row is one machine shift. shift_id is its unique business key. shift_date is YYYY-MM-DD; machine_id identifies one of 20 simulated machines. planned_hours is 8, 10 or 12 hours. ore_hardness is a synthetic 0–10 index (not a calibrated geological scale). feed_grade_pct is percent grade. ambient_temp_c is temperature in Celsius. prior_shift_availability is the fraction of the preceding shift assumed available before planning the target shift; it is simulated independently here, not calculated from an actual time series. actual_tonnes is the target outcome at shift end. energy_kwh is another shift-end outcome, useful for reporting only. Do not use either outcome as a predictor of the same shift’s tonnage.
+
+The raw file has 610 rows: 600 valid unique shifts, 6 invalid shifts, and 4 exact duplicate copies. The valid data cover 30 days, 20 machines per day. next_shifts.csv contains 10 fictional planned shifts without outcomes for scoring. No maintenance events, real failures, causal claims or real forecast validity are represented. The target was generated mainly from planned_hours, prior_shift_availability and ore_hardness plus random noise; strong fitted results reflect this artificial construction.

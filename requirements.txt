@@ -1,0 +1,9 @@
+# Use existing Databricks runtime packages first. These are compatible ranges,
+# not an exact environment lock and not instructions to upgrade the runtime.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scikit-learn>=1.3,<2
+matplotlib>=3.7,<4
+# Optional tracking only. Install only if absent and you want the extension.
+# mlflow>=2.9,<4
+# Do not pip-install pyspark or delta-spark over Databricks Runtime.
